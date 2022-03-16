@@ -5,4 +5,4 @@ provider "google" {
   zone    = "us-central1-a"
 }
 
-# TODO: a first VPC network with subnet in main zone
+# TODO: a first VPC network with subnet in main region
