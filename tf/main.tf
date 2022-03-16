@@ -4,3 +4,5 @@ provider "google" {
   region  = "us-central1"
   zone    = "us-central1-a"
 }
+
+# TODO: a first VPC network with subnet in main zone
