@@ -5,7 +5,7 @@
 readonly SA_NAME='terraform-robot'
 # TODO: use command to get this
 readonly PROJECT_ID=''
-readonly SA_EMAIL="${SA_NAME}@${side-projects-290712.iam.gserviceaccount.com}"
+readonly SA_EMAIL="${SA_NAME}@${PROJECT_ID}.iam.gserviceaccount.com"
 
 if [[ ! -s roles.txt ]]; then
     echo "Roles file doesn't exist or is empty, exiting..."

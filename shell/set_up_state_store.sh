@@ -3,7 +3,9 @@
 
 # TODO: finish me
 readonly PROJECT_NAME=''
+readonly BUCKET_NAME="gs://${PROJECT_NAME}_terraform_state"
 
-# TODO: create bucket to store state if doesn't exist
-# maybe gsutil to see if bucket exists and stat for state file(s)
-gsutil mb "gs://${PROJECT_NAME}_terraform_state"
+if ! gsutil ls -b "${BUCKET_NAME}" &> /dev/null; then
+    # TODO: maybe gsutil to stat for state file(s)
+    gsutil mb "${BUCKET_NAME}"
+fi
