@@ -13,4 +13,6 @@ resource "google_compute_subnetwork" "subnet" {
 #   TODO: pass this in
   region        = "us-central1"
   network       = google_compute_network.vpc_network.id
+
+#   private_ip_google_access
 }
