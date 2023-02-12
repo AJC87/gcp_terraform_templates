@@ -1,5 +1,7 @@
 # GCP Terraform templates
 
+`terraform apply -auto-approve`
+
 A collection of useful templates for GCP to help bootstraping projects and creating resources
 
 **TODO**
