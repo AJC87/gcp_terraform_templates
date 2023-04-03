@@ -37,6 +37,9 @@ data "google_billing_account" "account" {
 #   billing_account = data.google_billing_account.acct.id
 # }
 
+# For subnets 10.0.0.0/8 may conflict with 'default' VPC network
+# try 172.16.0.0/12 range i.e. 172.16.0.0/24, 172.16.1.0/24 ...
+
 # # TODO: a first VPC network with subnet in main region
 # module "vpc" {
 #    source  = "./modules/vpc_network"
