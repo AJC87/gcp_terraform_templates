@@ -8,3 +8,4 @@ A collection of useful templates for GCP to help bootstraping projects and creat
 1. Create a script to set up the state persistence in GCP
 2. Create a module for a billing budget for personal projects
 3. Uptime checks
+4. Vertex AI/Gemini
